@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Acceso Restringido</h2>
+
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Clave de Acceso (okay)</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce la clave secreta"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+
+        <!-- SECCIÓN NUEVA: SOCIAL LOGIN -->
+        <div class="separator">
+          <span>O continúa con</span>
+        </div>
+
+        <div class="social-buttons">
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/"
+            class="social-btn facebook"
+            title="Facebook"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
+              alt="Logo Facebook"
+            />
+          </a>
+
+          <!-- Gmail / Google -->
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox"
+            class="social-btn google"
+            title="Gmail"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+              alt="Logo Google"
+            />
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/"
+            class="social-btn github"
+            title="GitHub"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              alt="Logo GitHub"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="login.js"></script>
+  </body>
+</html>

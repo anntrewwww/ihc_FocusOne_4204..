@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FocusOne</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.js" />   
+    <link rel="stylesheet" href="Pie.css" />
+    
+  </head>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="80" height="80" src="image/—Pngtree—assasin gaming logo with sword_8209331.png" alt="" />
+      </a>
+       <!-- BOTÓN HAMBURGUESA -->
+
+   <button class="menu-toggle" aria-label="Abrir menú">
+
+    &#9776;
+
+    <!-- Ícono de hamburguesa -->
+
+   </button>
+    <ul class="Menu-Horizontal">
+      <li><a href="">Productos</a></li>
+      <li><a href="">Promociones</a>
+      <ul class="Menu-Vertical">
+         <li><a href="">Tarjeta Credito </a></li>
+         <li><a href="">Tarjeta Debito </a></li>
+         <li><a href="">Beneficios Viaje </a></li>
+         <li><a href="">Yape </a></li>
+        </ul>
+      </li>
+      <li><a href="">Zona Digital</a></li>
+      <li><a href="#Contactanos">Contactanos</a></li>      
+    </nav>
+
+    <!--SECCION ZONA PRODUCTOS-->
+      <section class="seccion-productos">
+          <div class="div-gral-productos">
+              <div class="div-prod-texto">
+                <h2> Seccion Productos </h2>
+           <p>
+
+            Un producto, en economía, es todo bien o servicio que se genera a través de un proceso productivo y que puede venderse, intercambiarse 
+            o generar ingresos en el mercado.
+          </p>
+          <p>
+            Además, en economía también se consideran productos ciertos activos 
+            financieros que generan rentabilidad, como bonos o fondos de inversión.
+          </p>
+          <button>Mas Información</button>
+        </div>
+              <div class="div-prod-img">
+                <img src="image/Definicion-de-Producto.jpg" />
+              </div>
+            </div>
+      </section>
+      
+    <!--SECCION ZONA DIGITAL-->            
+      <section class="seccion-zonding">
+            <div class="div-gral-zonding">
+                <div class="div-zonding-texto">
+                  <h2> Seccion: Zona Digital </h2>
+                  <p>
+                    Es una plataforma que enriquece el ecosistema 
+                    digital que viene desarrollando la institución, 
+                    con mayor ímpetu a partir del surgimiento de la 
+                    pandemia de la Covid – 19. Un esfuerzo conjunto 
+                    entre cinco direcciones de la Universidad que se han 
+                    unido para ofrecerle esta solución virtual a la comunidad
+                    externadista.
+                  </p>
+                </div>
+                <div class="div-zonding-video">
+                  <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/_f2bHnmeCXY?si=ZBZ5QNVJ2CQc-ZbC" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen></iframe>
+                </div>
+
+             </div>
+          </section>
+            <!--11/07--> 
+          <section id="Contactanos" class = "seccion-formulario" >
+            <div class="div-cont-formulario">
+              <h2>Formulario de Registro</h2>
+              <p>Complete todos los campos...</p>
+              <form class="Fomulario Registro:">
+                <!--INPUT:TEXT-->
+                <div class="campo">
+                  <label for="nombre">Nombre completos:</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres">
+                </div>
+                <!--dLISTA DESPEGABLE-->
+                <div class="campo">
+                  <label for="nombres">Pais</label>
+                  <select id="Pais" name="pais">
+                    <option value="">Seleccione un pais</option>
+                      <option value="peru">Peru</option>
+                        <option value="colombia">Colombia</option>
+                          <option value="Argentina">Argentina</option>
+                            <option value="Mexico">Mexico</option>
+                  </select>
+                </div>
+                <!--dLISTA Checkbot-->
+                <div class="campo">
+                  <label>Interes:</label>
+                  <ul class="lista-checkbox">
+                    <li><label><input type="checkbox" name="Intereses" value="a">Productos</label></li>
+                    <li><label><input type="checkbox" name="Intereses" value="b">Viajes</label></li>
+                    <li><label><input type="checkbox" name="Intereses" value="c">Firmas</label></li>
+                    <li><label><input type="checkbox" name="Intereses" value="d">Muebles</label></li>
+                  </ul>
+                </div>
+                <!--dLISTA RADIO-->
+                <div class="campo">              
+                    <label>Sexo:</label>
+                    <ul class="lista-radio">
+                      <li><label><input type="radio" name="sexo" value="M">Masculino</label></li>
+                      <li><label><input type="radio" name="sexo" value="F">Femenino</label></li>                    
+                    </ul>
+                  </div>
+                  <button type="submit" class="formulario-button">Enviar</button>
+              </form>
+            </div>
+          </section>
+          <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="image/—Pngtree—assasin gaming logo with sword_8209331.png" 
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>FocusOne</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/obtenerDocumento.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="https://x.com/home"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+            <a href="https://pe.linkedin.com/"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
